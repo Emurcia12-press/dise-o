@@ -1,183 +1,110 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-/*Encabezado*/
-header{
-   width: 100%;
-   height: 80px;
-   display: flex;
-   align-items: center;
-   padding: 10px 20px;
-   gap: 20px;
-}
-#logo{
-   width: 50px;
-   height: 50px;
-   background-color: rgb(248, 246, 243);
-   border-radius: 50%;
-}
-#titulo{
-   width: 80%;
-   height: 55px;
-   background-color: rgb(241, 186, 225);
-   float: left;
-   margin-left: 10px;
-   margin-top: 5px;
-   border-top-style: outset;
-   border-top-color: rgb(249, 250, 252);
-   border-bottom-style: double;
-   border-bottom-color: azure;
-   border-width: 10px;
-   text-align: center;
-   border-radius: 40px;
-   color: antiquewhite;
-}
-#titulo h1{
-   color: rgb(150, 101, 36);
-   letter-spacing: 5px;
-   word-spacing: 10px;
-   font-size: 20px;
-}
-/*Menu navegacion*/
-#nav{
-   padding: 10px 0;
-   text-align: center;
-}
-#nave{
-   list-style: none;
-   display: inline-block;
-}
-.l1{
-   display: inline-block;
-   margin: 0 10px;
-   position: relative;
-}
-.a1{
-   text-decoration: none;
-   background-color: rgb(211, 208, 204);
-   padding: 5px 10px;
-   display: inline-block;
-}
-.a :hover{
-   background-color: azure;
-   font-size: 10px;
-}
-.li ol{
-   list-style: none;
-   background-color: black;
-   display: none;
-   position: absolute;
-   left: 0;
-   top: 100%;
-   width: max-content;
-}
-.li:hover > ol{
-   display: block;
-}
-.li ol li a {
-   display: block;
-padding: 5pc 10px;
-text-decoration: none;
-color: bisque;
-}
-.li ol li a:hover{
-   background-color: rgb(250, 246, 240);
-   color: azure;
-}
-/*Artiulos*/
-.Sec1{
-   width: 100%;
-   padding: 20px;
-   background-color: rgb(250, 249, 247);
-}
-.articulo{
-   display: flex;
-   align-items: flex-start;
-   gap: 20px;
-   margin-bottom: 20px;
-   background-color: beige;
-   border-radius: 10px;
-}
-.imagen, .imagen2{
-   margin-top: 25px;
-   width: 140px;
-   height: 140px;
-   background-color: rgb(184, 211, 157);
-   border-radius: 10px; 
-   overflow: hidden;
-   flex-shrink: 0;
-}
-.imagen img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-}
-.texto, .texto2{
-    width: 450px;
-   height: 250px;
-   
-   border-radius: 10px;
-   overflow: hidden;
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-ol li{
-   display: none;
-   cursor: pointer;
- 
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6fa;
+  color: #333;
 }
-.cuadro {
-    width: 45%;
-    float: left;
-    margin: 2%;
-    background-color: #e8e8e8;
-    padding: 20px;
-    border: 2px solid #d08864;
-    border-radius: 10px;
-  }
 
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+header {
+  background: linear-gradient(to right, #d383c2, #a770ef);
+  padding: 20px;
+  text-align: center;
+  color: rgb(20, 19, 19);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-  }
+nav {
+  margin-top: 15px;
+}
 
-  header {
-    background-color: #d5d7da;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
+nav a {
+  margin: 0 10px;
+  padding: 10px 15px;
+  background-color: wheat;
+  color: #444;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
 
-  .contenedor {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Hace que se acomode en móviles */
-    padding: 20px;
-    gap: 20px;
-  }
+nav a:hover {
+  background-color: #fdf8f8;
+}
 
-  .cuadro {
-    flex: 1 1 45%;
-  
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    min-width: 300px;
-  }
+main {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  p {
-    line-height: 1.6;
-    text-align: justify;
-  }
+.tema {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.tema h2 {
+  color: #a770ef;
+  margin-bottom: 10px;
+}
+
+.contenido {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.contenido img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
